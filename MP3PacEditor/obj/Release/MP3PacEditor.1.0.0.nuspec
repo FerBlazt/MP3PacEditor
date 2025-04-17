@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MP3PacEditor</id>
+    <version>1.0.0</version>
+    <authors>MP3PacEditor</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0">
+        <dependency id="TagLibSharp" version="2.3.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\Rokas\Desktop\Visual Studio Comps\MP3PacEditor\bin\Release\net6.0-windows\MP3PacEditor.runtimeconfig.json" target="lib\net6.0-windows7.0\MP3PacEditor.runtimeconfig.json" />
+    <file src="C:\Users\Rokas\Desktop\Visual Studio Comps\MP3PacEditor\bin\Release\net6.0-windows\MP3PacEditor.dll" target="lib\net6.0-windows7.0\MP3PacEditor.dll" />
+  </files>
+</package>

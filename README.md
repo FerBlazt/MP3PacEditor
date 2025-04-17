@@ -1,6 +1,6 @@
 # MP3PacEditor - audio file metadata editor 4 boss playas
 
-<img alt="MP3PacEditor icon" src="Resources/MP3PacEditor_Icon.png" style="width:30%;">
+<img alt="MP3PacEditor icon" src="Resources/MP3PacEditor_Icon.png" style="width:50%;">
 
 _biggie wuz tha meanin of lyfe..._
 

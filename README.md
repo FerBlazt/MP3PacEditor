@@ -15,9 +15,12 @@ Built using **Windows Forms (.NET)** and powered by **TagLib#** for reading/writ
 # 1. Installation
 
 ### Windows
-- Download the latest `MP3PacEditor.exe` release from: [https://github.com/yourname/MP3PacEditor/releases](https://github.com/FerBlazt/MP3PacEditor/releases)
+- Download the latest `MP3PacEditor.exe` release from: [https://github.com/FerBlazt/MP3PacEditor/releases](https://github.com/FerBlazt/MP3PacEditor/releases)
 - Just run it. No setup needed.
 - Optional: add album art placeholder in `Resources` if missing images bother you.
+
+### Linux
+- **MP3PacEditor** uses **WinForms** which is natively tied to **_Windows_**. You might be able to run it using tools like **Wine** or **Mono**, but I haven't tested.
 
 > **Note:** MP3PacEditor is fully offline. No telemetry. No updates. Just clean metadata edits.
 

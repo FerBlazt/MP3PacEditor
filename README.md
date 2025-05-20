@@ -73,6 +73,7 @@ All formats supported by TagLib# are supported by MP3PacEditor:
 - [ ] Dark theme
 - [ ] Option to view ALL metadata of a file, not just select sections
 - [ ] General selectable options
+- [ ] Audio file playback
 
 # 6. Building
 

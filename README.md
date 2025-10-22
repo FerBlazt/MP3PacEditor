@@ -39,7 +39,7 @@ Built using **Windows Forms (.NET)** and powered by **TagLib#** for reading/writ
 - Use:
   - **"Save"** to update metadata
   - **"Save Copy"** to apply metadata changes to a duplicate of the file
-  - **"Clear All Metadata"** to erase all metadata from selected file
+  - **"Clear All Metadata"** to erase all metadata from selected file (not yet implemented)
   - **"Delete File"** to remove the selected file
   - **"Match File Name"** to rename files to a `Artist - Title & Album` pattern
 - Album art is displayed in a square viewer. Click it to open full-size viewer.

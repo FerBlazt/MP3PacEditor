@@ -7,3 +7,4 @@ obj/
 *.log
 *.cfg
 .sonarqube/
+exceptionlog.txt

@@ -31,6 +31,7 @@ namespace MP3PacEditor
         // Implemented ICloneable                                       (1 point)
 
         // TOTAL POINTS = 7
+        //XDFXDXDXDXDXDSRZDFCYDAHGHFGVUERJBNLTSRIUJBHILURTSJBHNRSTYJK
 
         private static string configFilePath;
         private static string lastUsedFolder;

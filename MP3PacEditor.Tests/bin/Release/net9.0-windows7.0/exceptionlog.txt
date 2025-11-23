@@ -1,0 +1,8 @@
+=== Metadata Read Exception ===
+Timestamp: 2025-11-23 15:50:35
+File: /music/song.mp3
+Message: Unable to read metadata
+Inner Exception: InvalidOperationException - broken
+Stack Trace:
+
+----------------------------------------------------------------------------------------------------

@@ -5,6 +5,8 @@ namespace MP3PacEditor
 {
     public class MetadataReadException : Exception
     {
+        private const string LogFileName = "exceptionlog.txt";
+
         public string FilePath { get; }
 
         public MetadataReadException(string filePath, string message, Exception innerException = null)
@@ -12,32 +14,42 @@ namespace MP3PacEditor
         {
             FilePath = filePath;
 
-            LogToFile(filePath, message, innerException);
+            TryLogToFile(this);
         }
 
-        private void LogToFile(string filePath, string message, Exception inner)
+        private static void TryLogToFile(MetadataReadException exception)
         {
-            string logPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "exceptionlog.txt");
+            string logPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, LogFileName);
+
             try
             {
-                using (StreamWriter writer = new StreamWriter(logPath, true))
+                using (var writer = new StreamWriter(logPath, append: true))
                 {
-                    writer.WriteLine("=== Metadata Read Exception ===");
-                    writer.WriteLine($"Timestamp: {DateTime.Now:yyyy-MM-dd HH:mm:ss}");
-                    writer.WriteLine($"File: {filePath}");
-                    writer.WriteLine($"Message: {message}");
-                    if (inner != null)
-                    {
-                        writer.WriteLine($"Inner Exception: {inner.GetType().Name} - {inner.Message}");
-                        writer.WriteLine($"Stack Trace:\n{inner.StackTrace}");
-                    }
-                    writer.WriteLine(new string('-', 50));
+                    WriteLogEntry(writer, exception);
                 }
             }
-            catch
+            catch (Exception logEx)
             {
-                // lol
+                System.Diagnostics.Debug.WriteLine($"Failed to write metadata log: {logEx.Message}");
             }
+        }
+
+        private static void WriteLogEntry(TextWriter writer, MetadataReadException exception)
+        {
+            Exception inner = exception.InnerException;
+
+            writer.WriteLine("=== Metadata Read Exception ===");
+            writer.WriteLine($"Timestamp: {DateTime.Now:yyyy-MM-dd HH:mm:ss}");
+            writer.WriteLine($"File: {exception.FilePath}");
+            writer.WriteLine($"Message: {exception.Message}");
+
+            if (inner != null)
+            {
+                writer.WriteLine($"Inner Exception: {inner.GetType().Name} - {inner.Message}");
+                writer.WriteLine($"Stack Trace:{Environment.NewLine}{inner.StackTrace}");
+            }
+
+            writer.WriteLine(new string('-', 100));
         }
     }
 }

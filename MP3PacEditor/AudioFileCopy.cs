@@ -14,21 +14,31 @@ namespace MP3PacEditor
 
         public AudioFileCopy Clone(string customFileName = null)
         {
-            string directory = Path.GetDirectoryName(FilePath);
+            string targetPath = GenerateCopyPath(customFileName);
+            File.Copy(FilePath, targetPath);
+            return new AudioFileCopy(targetPath);
+        }
+
+        private string GenerateCopyPath(string customFileName)
+        {
+            string directory = Path.GetDirectoryName(FilePath) ?? string.Empty;
             string extension = Path.GetExtension(FilePath);
             string baseName = Path.GetFileNameWithoutExtension(FilePath);
-            string copyName = customFileName ?? $"{baseName}_copy";
-            string newPath = Path.Combine(directory, copyName + extension);
+
+            string copyBaseName = string.IsNullOrWhiteSpace(customFileName)
+                ? $"{baseName}_copy"
+                : customFileName;
+
+            string candidatePath = Path.Combine(directory, copyBaseName + extension);
 
             int count = 1;
-            while (File.Exists(newPath))
+            while (File.Exists(candidatePath))
             {
-                newPath = Path.Combine(directory, $"{copyName}({count}){extension}");
+                candidatePath = Path.Combine(directory, $"{copyBaseName}({count}){extension}");
                 count++;
             }
 
-            File.Copy(FilePath, newPath);
-            return new AudioFileCopy(newPath);
+            return candidatePath;
         }
     }
 }

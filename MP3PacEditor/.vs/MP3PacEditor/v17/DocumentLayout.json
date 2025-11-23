@@ -1,46 +1,76 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Rokas\\Desktop\\Visual Studio Comps\\MP3PacEditor\\",
+  "WorkspaceRootPath": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|c:\\users\\rokas\\desktop\\visual studio comps\\mp3paceditor\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|C:\\Users\\Rokas\\Desktop\\Visual Studio Comps\\MP3PacEditor\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|c:\\users\\rokas\\desktop\\visual studio comps\\mp3paceditor\\mp3paceditor.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|solutionrelative:mp3paceditor.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|c:\\users\\rokas\\desktop\\visual studio comps\\mp3paceditor\\audiofilecopy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|solutionrelative:audiofilecopy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|c:\\users\\rokas\\desktop\\visual studio comps\\mp3paceditor\\warningpopup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|solutionrelative:warningpopup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|c:\\users\\rokas\\desktop\\visual studio comps\\mp3paceditor\\albumartviewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|solutionrelative:albumartviewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|c:\\users\\rokas\\desktop\\visual studio comps\\mp3paceditor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|c:\\users\\rokas\\desktop\\visual studio comps\\mp3paceditor\\metadatareadexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|c:\\users\\rokas\\documents\\mp3paceditor\\mp3paceditor\\metadatareadexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|solutionrelative:metadatareadexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|c:\\users\\rokas\\desktop\\visual studio comps\\mp3paceditor\\audiofilehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|c:\\users\\rokas\\documents\\mp3paceditor\\mp3paceditor\\audiofilehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|solutionrelative:audiofilehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|c:\\users\\rokas\\desktop\\visual studio comps\\mp3paceditor\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|c:\\users\\rokas\\documents\\mp3paceditor\\mp3paceditor\\audiofilecopy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|solutionrelative:audiofilecopy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|c:\\users\\rokas\\documents\\mp3paceditor\\mp3paceditor\\imagehelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|solutionrelative:imagehelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|c:\\users\\rokas\\documents\\mp3paceditor\\mp3paceditor\\listviewitemcomparer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|solutionrelative:listviewitemcomparer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28EC41B7-34D7-4202-BC00-E7EB08D894B2}|..\\MP3PacEditor.Tests\\MP3PacEditor.Tests.csproj|c:\\users\\rokas\\documents\\mp3paceditor\\mp3paceditor.tests\\imagehelperstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28EC41B7-34D7-4202-BC00-E7EB08D894B2}|..\\MP3PacEditor.Tests\\MP3PacEditor.Tests.csproj|c:\\users\\rokas\\documents\\mp3paceditor\\mp3paceditor.tests\\listviewitemcomparertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28EC41B7-34D7-4202-BC00-E7EB08D894B2}|..\\MP3PacEditor.Tests\\MP3PacEditor.Tests.csproj|c:\\users\\rokas\\documents\\mp3paceditor\\mp3paceditor.tests\\audiofilecopytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|c:\\users\\rokas\\documents\\mp3paceditor\\mp3paceditor\\warningpopup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|solutionrelative:warningpopup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|c:\\users\\rokas\\documents\\mp3paceditor\\mp3paceditor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|c:\\users\\rokas\\documents\\mp3paceditor\\mp3paceditor\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28EC41B7-34D7-4202-BC00-E7EB08D894B2}|..\\MP3PacEditor.Tests\\MP3PacEditor.Tests.csproj|c:\\users\\rokas\\documents\\mp3paceditor\\mp3paceditor.tests\\mp3paceditor.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28EC41B7-34D7-4202-BC00-E7EB08D894B2}|..\\MP3PacEditor.Tests\\MP3PacEditor.Tests.csproj|c:\\users\\rokas\\documents\\mp3paceditor\\mp3paceditor.tests\\audiofilehelpertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28EC41B7-34D7-4202-BC00-E7EB08D894B2}|..\\MP3PacEditor.Tests\\MP3PacEditor.Tests.csproj|c:\\users\\rokas\\documents\\mp3paceditor\\mp3paceditor.tests\\metadatareadexceptiontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|c:\\users\\rokas\\documents\\mp3paceditor\\mp3paceditor\\mp3paceditor.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|solutionrelative:mp3paceditor.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|c:\\users\\rokas\\documents\\mp3paceditor\\mp3paceditor\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|c:\\users\\rokas\\documents\\mp3paceditor\\mp3paceditor\\mp3paceditor.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|solutionrelative:mp3paceditor.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|c:\\users\\rokas\\documents\\mp3paceditor\\mp3paceditor\\mp3pacresources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4638A03-7070-41A6-91FA-AB568FDFBA27}|MP3PacEditor.csproj|solutionrelative:mp3pacresources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,130 +80,246 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MP3PacEditor",
-              "DocumentMoniker": "C:\\Users\\Rokas\\Desktop\\Visual Studio Comps\\MP3PacEditor\\MP3PacEditor.csproj",
-              "RelativeDocumentMoniker": "MP3PacEditor.csproj",
-              "ToolTip": "C:\\Users\\Rokas\\Desktop\\Visual Studio Comps\\MP3PacEditor\\MP3PacEditor.csproj",
-              "RelativeToolTip": "MP3PacEditor.csproj",
+              "DocumentIndex": 10,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAA4BAAAAAAAAAAAAAEQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T17:49:21.4Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AudioFileHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor\\AudioFileHelper.cs",
+              "RelativeDocumentMoniker": "AudioFileHelper.cs",
+              "ToolTip": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor\\AudioFileHelper.cs",
+              "RelativeToolTip": "AudioFileHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T13:42:14.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ListViewItemComparer.cs",
+              "DocumentMoniker": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor\\ListViewItemComparer.cs",
+              "RelativeDocumentMoniker": "ListViewItemComparer.cs",
+              "ToolTip": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor\\ListViewItemComparer.cs",
+              "RelativeToolTip": "ListViewItemComparer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T12:12:09.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MP3PacEditor.Tests.csproj",
+              "DocumentMoniker": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor.Tests\\MP3PacEditor.Tests.csproj",
+              "RelativeDocumentMoniker": "..\\MP3PacEditor.Tests\\MP3PacEditor.Tests.csproj",
+              "ToolTip": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor.Tests\\MP3PacEditor.Tests.csproj",
+              "RelativeToolTip": "..\\MP3PacEditor.Tests\\MP3PacEditor.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-27T18:59:38.28Z",
+              "WhenOpened": "2025-11-23T10:24:18.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AudioFileCopyTests.cs",
+              "DocumentMoniker": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor.Tests\\AudioFileCopyTests.cs",
+              "RelativeDocumentMoniker": "..\\MP3PacEditor.Tests\\AudioFileCopyTests.cs",
+              "ToolTip": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor.Tests\\AudioFileCopyTests.cs",
+              "RelativeToolTip": "..\\MP3PacEditor.Tests\\AudioFileCopyTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T10:20:38.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ListViewItemComparerTests.cs",
+              "DocumentMoniker": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor.Tests\\ListViewItemComparerTests.cs",
+              "RelativeDocumentMoniker": "..\\MP3PacEditor.Tests\\ListViewItemComparerTests.cs",
+              "ToolTip": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor.Tests\\ListViewItemComparerTests.cs",
+              "RelativeToolTip": "..\\MP3PacEditor.Tests\\ListViewItemComparerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T10:23:56.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AudioFileHelperTests.cs",
+              "DocumentMoniker": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor.Tests\\AudioFileHelperTests.cs",
+              "RelativeDocumentMoniker": "..\\MP3PacEditor.Tests\\AudioFileHelperTests.cs",
+              "ToolTip": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor.Tests\\AudioFileHelperTests.cs",
+              "RelativeToolTip": "..\\MP3PacEditor.Tests\\AudioFileHelperTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T10:22:32.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MetadataReadException.cs",
+              "DocumentMoniker": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor\\MetadataReadException.cs",
+              "RelativeDocumentMoniker": "MetadataReadException.cs",
+              "ToolTip": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor\\MetadataReadException.cs",
+              "RelativeToolTip": "MetadataReadException.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADMAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T12:47:15.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AudioFileCopy.cs",
+              "DocumentMoniker": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor\\AudioFileCopy.cs",
+              "RelativeDocumentMoniker": "AudioFileCopy.cs",
+              "ToolTip": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor\\AudioFileCopy.cs",
+              "RelativeToolTip": "AudioFileCopy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T13:33:56.369Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "AlbumArtViewer.cs",
-              "DocumentMoniker": "C:\\Users\\Rokas\\Desktop\\Visual Studio Comps\\MP3PacEditor\\AlbumArtViewer.cs",
-              "RelativeDocumentMoniker": "AlbumArtViewer.cs",
-              "ToolTip": "C:\\Users\\Rokas\\Desktop\\Visual Studio Comps\\MP3PacEditor\\AlbumArtViewer.cs",
-              "RelativeToolTip": "AlbumArtViewer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAtAAAAAAAAAA==",
+              "Title": "ImageHelpersTests.cs",
+              "DocumentMoniker": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor.Tests\\ImageHelpersTests.cs",
+              "RelativeDocumentMoniker": "..\\MP3PacEditor.Tests\\ImageHelpersTests.cs",
+              "ToolTip": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor.Tests\\ImageHelpersTests.cs",
+              "RelativeToolTip": "..\\MP3PacEditor.Tests\\ImageHelpersTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T15:52:12.839Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "WarningPopup.cs",
-              "DocumentMoniker": "C:\\Users\\Rokas\\Desktop\\Visual Studio Comps\\MP3PacEditor\\WarningPopup.cs",
-              "RelativeDocumentMoniker": "WarningPopup.cs",
-              "ToolTip": "C:\\Users\\Rokas\\Desktop\\Visual Studio Comps\\MP3PacEditor\\WarningPopup.cs",
-              "RelativeToolTip": "WarningPopup.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T15:52:00.013Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Rokas\\Desktop\\Visual Studio Comps\\MP3PacEditor\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Rokas\\Desktop\\Visual Studio Comps\\MP3PacEditor\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T15:51:58.133Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MetadataReadException.cs",
-              "DocumentMoniker": "C:\\Users\\Rokas\\Desktop\\Visual Studio Comps\\MP3PacEditor\\MetadataReadException.cs",
-              "RelativeDocumentMoniker": "MetadataReadException.cs",
-              "ToolTip": "C:\\Users\\Rokas\\Desktop\\Visual Studio Comps\\MP3PacEditor\\MetadataReadException.cs",
-              "RelativeToolTip": "MetadataReadException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T15:50:24.902Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Rokas\\Desktop\\Visual Studio Comps\\MP3PacEditor\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\Rokas\\Desktop\\Visual Studio Comps\\MP3PacEditor\\Form1.Designer.cs",
-              "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAMwBYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T14:53:58.976Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Rokas\\Desktop\\Visual Studio Comps\\MP3PacEditor\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Rokas\\Desktop\\Visual Studio Comps\\MP3PacEditor\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T14:07:31.357Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Rokas\\Desktop\\Visual Studio Comps\\MP3PacEditor\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Rokas\\Desktop\\Visual Studio Comps\\MP3PacEditor\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAIUBAAAAAAAAAAAMwJgBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T14:18:58.493Z",
+              "WhenOpened": "2025-11-23T10:23:23.221Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AudioFileCopy.cs",
-              "DocumentMoniker": "C:\\Users\\Rokas\\Desktop\\Visual Studio Comps\\MP3PacEditor\\AudioFileCopy.cs",
-              "RelativeDocumentMoniker": "AudioFileCopy.cs",
-              "ToolTip": "C:\\Users\\Rokas\\Desktop\\Visual Studio Comps\\MP3PacEditor\\AudioFileCopy.cs",
-              "RelativeToolTip": "AudioFileCopy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Title": "ImageHelpers.cs",
+              "DocumentMoniker": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor\\ImageHelpers.cs",
+              "RelativeDocumentMoniker": "ImageHelpers.cs",
+              "ToolTip": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor\\ImageHelpers.cs",
+              "RelativeToolTip": "ImageHelpers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T04:17:13.149Z",
+              "WhenOpened": "2025-10-22T18:37:27.529Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "AudioFileHelper.cs",
-              "DocumentMoniker": "C:\\Users\\Rokas\\Desktop\\Visual Studio Comps\\MP3PacEditor\\AudioFileHelper.cs",
-              "RelativeDocumentMoniker": "AudioFileHelper.cs",
-              "ToolTip": "C:\\Users\\Rokas\\Desktop\\Visual Studio Comps\\MP3PacEditor\\AudioFileHelper.cs",
-              "RelativeToolTip": "AudioFileHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Title": "WarningPopup.cs",
+              "DocumentMoniker": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor\\WarningPopup.cs",
+              "RelativeDocumentMoniker": "WarningPopup.cs",
+              "ToolTip": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor\\WarningPopup.cs",
+              "RelativeToolTip": "WarningPopup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T15:49:52.054Z"
+              "WhenOpened": "2025-11-23T12:27:39.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T17:47:26.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MetadataReadExceptionTests.cs",
+              "DocumentMoniker": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor.Tests\\MetadataReadExceptionTests.cs",
+              "RelativeDocumentMoniker": "..\\MP3PacEditor.Tests\\MetadataReadExceptionTests.cs",
+              "ToolTip": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor.Tests\\MetadataReadExceptionTests.cs",
+              "RelativeToolTip": "..\\MP3PacEditor.Tests\\MetadataReadExceptionTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T10:27:19.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MP3PacEditor.csproj",
+              "DocumentMoniker": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor\\MP3PacEditor.csproj",
+              "RelativeDocumentMoniker": "MP3PacEditor.csproj",
+              "ToolTip": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor\\MP3PacEditor.csproj",
+              "RelativeToolTip": "MP3PacEditor.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-24T13:46:21.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MP3PacResources.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor\\MP3PacResources.Designer.cs",
+              "RelativeDocumentMoniker": "MP3PacResources.Designer.cs",
+              "ToolTip": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor\\MP3PacResources.Designer.cs",
+              "RelativeToolTip": "MP3PacResources.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T16:01:26.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MP3PacEditor",
+              "DocumentMoniker": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor\\MP3PacEditor.csproj",
+              "RelativeDocumentMoniker": "MP3PacEditor.csproj",
+              "ToolTip": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor\\MP3PacEditor.csproj",
+              "RelativeToolTip": "MP3PacEditor.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-17T18:14:22.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-04-17T17:57:43.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Rokas\\Documents\\MP3PacEditor\\MP3PacEditor\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T17:45:02.776Z"
             }
           ]
         }

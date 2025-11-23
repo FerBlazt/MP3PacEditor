@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MP3PacEditor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d35441e8a61de70399cd110064a3aeee3f8896e")]
 [assembly: System.Reflection.AssemblyProductAttribute("MP3PacEditor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MP3PacEditor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

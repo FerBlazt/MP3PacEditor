@@ -1,0 +1,9 @@
+# Ignore build output and temp files
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.log
+*.cfg
+.sonarqube/

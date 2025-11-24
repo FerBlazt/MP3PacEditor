@@ -18,13 +18,13 @@ public static class ImageHelpers
         int y = (original.Height - size) / 2;
 
         Rectangle cropArea = new Rectangle(x, y, size, size);
-        Bitmap squareImage = new Bitmap(size, size);
+        Bitmap cropped = new Bitmap(size, size);
 
-        using (Graphics g = Graphics.FromImage(squareImage))
+        using (Graphics g = Graphics.FromImage(cropped))
         {
             g.DrawImage(original, new Rectangle(0, 0, size, size), cropArea, GraphicsUnit.Pixel);
         }
 
-        return squareImage;
+        return cropped;
     }
 }

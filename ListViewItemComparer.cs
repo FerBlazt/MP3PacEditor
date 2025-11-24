@@ -2,14 +2,17 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Windows.Forms;
+using MP3PacEditor;
+using static MP3PacEditor.MainWindowForm;
 
-// Data structures from System.Collections or System.Collections.Generic are used (1 point)
-// Use sealed or partial class (0.5 points)
 public sealed class ListViewItemComparer : Comparer<ListViewItem>
 {
+    private const string FileSizeSuffix = " MB";
+    private const string BitrateSuffix = " kbps";
+    private const string DateTimeFormat = "dd/MM/yyyy HH:mm:ss";
 
-    private int columnIndex;
-    private bool ascending;
+    private readonly int columnIndex;
+    private readonly bool ascending;
 
     public ListViewItemComparer(int columnIndex, bool ascending = true)
     {
@@ -19,34 +22,81 @@ public sealed class ListViewItemComparer : Comparer<ListViewItem>
 
     public override int Compare(ListViewItem x, ListViewItem y)
     {
-        if (x == null || y == null) return 0;
+        if (x == null || y == null)
+        {
+            return 0;
+        }
 
         string textX = x.SubItems[columnIndex].Text;
         string textY = y.SubItems[columnIndex].Text;
 
-        int result;
-        if (double.TryParse(textX.Replace(" MB", "").Replace(" kbps", ""), out double numX) &&
-            double.TryParse(textY.Replace(" MB", "").Replace(" kbps", ""), out double numY))
+        // skaitinis palyginimas (failo dydis, bitreitas ir t.t.)
+        if (TryCompareAsNumber(textX, textY, out int numericResult))
+        {
+            return ApplySortDirection(numericResult);
+        }
+
+        // datos / laiko palyginimas
+        if (TryCompareAsDate(textX, textY, out int dateResult))
+        {
+            return ApplySortDirection(dateResult);
+        }
+
+        // paprastas tekstinis palyginimas
+        int textResult = StringComparer.CurrentCultureIgnoreCase.Compare(textX, textY);
+        return ApplySortDirection(textResult);
+    }
+
+    private int ApplySortDirection(int result) => ascending ? result : -result;
+
+    private static bool TryCompareAsNumber(string textX, string textY, out int result)
+    {
+        if (TryParseNumber(textX, out double numX) && TryParseNumber(textY, out double numY))
         {
             result = numX.CompareTo(numY);
-        }
-        else if(IsValidDate(textX) && IsValidDate(textY))
-        {
-            DateTime dateX = DateTime.ParseExact(textX, "dd/MM/yyyy HH:mm:ss", CultureInfo.InvariantCulture);
-            DateTime dateY = DateTime.ParseExact(textY, "dd/MM/yyyy HH:mm:ss", CultureInfo.InvariantCulture);
-            result = dateX.CompareTo(dateY);
-        }
-        else
-        {
-            result = StringComparer.CurrentCultureIgnoreCase.Compare(textX, textY);
+            return true;
         }
 
-        return ascending ? result : -result;
+        result = 0;
+        return false;
     }
 
-    private bool IsValidDate(string dateStr)
+    private static bool TryParseNumber(string text, out double value)
     {
-        return DateTime.TryParseExact(dateStr, "dd/MM/yyyy HH:mm:ss", CultureInfo.InvariantCulture, DateTimeStyles.None, out _);
+        string cleaned = text
+            .Replace(FileSizeSuffix, string.Empty)
+            .Replace(BitrateSuffix, string.Empty);
+
+        return double.TryParse(
+            cleaned,
+            NumberStyles.Float,
+            CultureInfo.InvariantCulture,
+            out value);
     }
 
+    private static bool TryCompareAsDate(string textX, string textY, out int result)
+    {
+        bool parsedX = DateTime.TryParseExact(
+            textX,
+            Formatting.DateTimeFormat,
+            CultureInfo.InvariantCulture,
+            DateTimeStyles.None,
+            out DateTime dateX);
+
+        bool parsedY = DateTime.TryParseExact(
+            textY,
+            Formatting.DateTimeFormat,
+            CultureInfo.InvariantCulture,
+            DateTimeStyles.None,
+            out DateTime dateY);
+
+        if (parsedX && parsedY)
+        {
+            result = dateX.CompareTo(dateY);
+            return true;
+        }
+
+        result = 0;
+        return false;
+    }
 }

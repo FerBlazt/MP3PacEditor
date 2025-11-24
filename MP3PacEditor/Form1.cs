@@ -6,33 +6,6 @@ namespace MP3PacEditor
 {
     public partial class MainWindowForm : Form
     {
-
-        //                              PART 1
-        // Created and applied your own interface                       (0.5 points)
-        // Use switch with the when keyword                             (0.5 points)
-        // Operators ?., ?? are used                                    (0.5 points)
-        // A static constructor is used                                 (1 point)
-        // The project consists of more than one module (assembly)      (1 point)
-        // Pattern matching is used                                     (1 point)
-        // Data structures from System.Collections.Generic are used     (1 point)
-        // Use sealed or partial class                                  (0.5 points)
-        // Delegates or lambda functions are used (LINQ)                (1.5 points)
-
-        // TOTAL POINTS == 7.5
-
-        //                              PART 2
-        // Used extended C# types                                       (0.5 points)
-        // Created an iterator                                          (0.5 points)
-        // Use LINQ                                                     (1 point)
-        // There are try-catch blocks in places where errors may occur  (1 point)
-        // Created and used your own exception types                    (1 point)
-        // You use events in your project                               (1 point)
-        // Implemented IEnumerable<T>                                   (1 point)
-        // Implemented ICloneable                                       (1 point)
-
-        // TOTAL POINTS = 7
-        //XDFXDXDXDXDXDSRZDFCYDAHGHFGVUERJBNLTSRIUJBHILURTSJBHNRSTYJK
-
         private static string configFilePath;
         private static string lastUsedFolder;
         private Dictionary<string, byte[]> albumArtMap = new Dictionary<string, byte[]>();
@@ -56,7 +29,6 @@ namespace MP3PacEditor
             {
                 LoadFilesFromFolder(lastUsedFolder);
                 WarningPopup.Show(this, $"Successfully loaded last used folder!", Color.LimeGreen);
-                //MessageBox.Show($"Restoring last used folder:\n{lastUsedFolder}", "Folder Loaded", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
         }
@@ -71,7 +43,6 @@ namespace MP3PacEditor
             {
                 if (folderDialog.ShowDialog() == DialogResult.OK)
                 {
-                    //string selectedFolderPath = folderDialog.SelectedPath;
                     lastUsedFolder = folderDialog.SelectedPath;
                     File.WriteAllText(configFilePath, lastUsedFolder);
                     LoadFilesFromFolder(lastUsedFolder);
@@ -81,7 +52,6 @@ namespace MP3PacEditor
 
         private void LoadFilesFromFolder(string selectedFolderPath)
         {
-            //string[] mp3Files = Directory.GetFiles(selectedFolderPath, "*.mp3");
             var audioFiles = AudioFileHelper.GetSupportedAudioFiles(selectedFolderPath);
 
             folderListView.Columns.Clear();
@@ -114,8 +84,10 @@ namespace MP3PacEditor
 
                     // For infoListView
                     string duration = fileTag.Properties.Duration.ToString(@"hh\:mm\:ss");
-                    string dateCreated = fileInfo.CreationTime.ToString("dd/MM/yyyy HH:mm:ss");
-                    string dateModified = fileInfo.LastWriteTime.ToString("dd/MM/yyyy HH:mm:ss");
+
+                    string dateCreated = fileInfo.CreationTime.ToString(Formatting.DateTimeFormat);
+                    string dateModified = fileInfo.LastWriteTime.ToString(Formatting.DateTimeFormat);
+
                     string format = fileTag.MimeType.Remove(0, 7).ToUpper();
 
                     // For PictureBox
@@ -143,10 +115,7 @@ namespace MP3PacEditor
                 catch (Exception ex)
                 {
                     var customEx = new MetadataReadException(file, "Error reading metadata.", ex);
-
                     WarningPopup.Show(this, $"Failed to read metadata from file.\n({Path.GetFileName(file)})", Color.DarkRed);
-
-                    //MessageBox.Show($"Error reading metadata from file {file}: {ex.Message}");
                 }
             }
             // Global storage, naudojamas searchui)
@@ -158,9 +127,7 @@ namespace MP3PacEditor
             if (folderListView.SelectedItems.Count > 0)
             {
                 ListViewItem selectedItem = folderListView.SelectedItems[0];
-                //var metadata = selectedItem.Tag as dynamic;
 
-                //fileNameBox.Text = selectedItem.SubItems[0].Text;
                 fileNameBox.Text = Path.GetFileNameWithoutExtension(selectedItem.SubItems[0].Text);
                 titleBox.Text = selectedItem.SubItems[1].Text;
                 artistBox.Text = selectedItem.SubItems[2].Text;
@@ -240,34 +207,22 @@ namespace MP3PacEditor
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            if (folderListView.SelectedItems.Count == 0)
-            {
-                //MessageBox.Show("Please select a file to update its metadata.");
-                WarningPopup.Show(this, $"Please select a file to update it's metadata.", Color.Goldenrod);
-                return;
-            }
 
-            string filePath = folderListView.SelectedItems[0].Tag.ToString();
+            if (!TryGetSelectedFilePath(out string filePath))
+                return;
 
             try
             {
                 var fileTag = TagLib.File.Create(filePath);
 
-                fileTag.Tag.Title = titleBox.Text;
-                fileTag.Tag.Performers = new string[] { artistBox.Text };
-                fileTag.Tag.Album = albumBox.Text;
+                UpdateTagFromInputs(fileTag, titleBox.Text, artistBox.Text, albumBox.Text);
 
                 fileTag.Save();
 
                 string newFileName = Path.Combine(Path.GetDirectoryName(filePath), fileNameBox.Text + Path.GetExtension(filePath));
 
-                if (filePath != newFileName)
-                {
-                    File.Move(filePath, newFileName);
-                    filePath = newFileName;
-                }
+                RenameFileIfNeeded(ref filePath, newFileName);
 
-                //MessageBox.Show("Metadata and file name updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 WarningPopup.Show(this, $"Successfully updated file metadata!\n({Path.GetFileName(filePath)})", Color.LimeGreen);
 
                 LoadFilesFromFolder(Path.GetDirectoryName(filePath));
@@ -280,14 +235,10 @@ namespace MP3PacEditor
 
         private void fileNameMatchButton_Click(object sender, EventArgs e)
         {
-            if (folderListView.SelectedItems.Count == 0)
-            {
-                //MessageBox.Show("Please select a file to update its name.");
-                WarningPopup.Show(this, $"Please select a file to update it's name.", Color.Goldenrod);
-                return;
-            }
 
-            string filePath = folderListView.SelectedItems[0].Tag.ToString();
+            if (!TryGetSelectedFilePath(out string filePath))
+                return;
+
 
             try
             {
@@ -299,7 +250,6 @@ namespace MP3PacEditor
 
                 if (string.IsNullOrEmpty(title) || string.IsNullOrEmpty(artist))
                 {
-                    //MessageBox.Show("The file must have both a title and an artist to rename it.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     WarningPopup.Show(this, $"The file must have both a title and an artist to rename it.", Color.Goldenrod);
                     return;
                 }
@@ -314,13 +264,8 @@ namespace MP3PacEditor
                     newFileName = Path.Combine(Path.GetDirectoryName(filePath), $"{artist} - {title} {album}{Path.GetExtension(filePath)}");
                 }
 
-                if (filePath != newFileName)
-                {
-                    File.Move(filePath, newFileName);
-                    filePath = newFileName;
-                }
+                RenameFileIfNeeded(ref filePath, newFileName);
 
-                //MessageBox.Show("File name updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 WarningPopup.Show(this, $"Successfully updated file name!\n({Path.GetFileName(filePath)})", Color.LimeGreen);
 
                 LoadFilesFromFolder(Path.GetDirectoryName(filePath));
@@ -342,14 +287,9 @@ namespace MP3PacEditor
 
         private void saveCopyButton_Click(object sender, EventArgs e)
         {
-            if (folderListView.SelectedItems.Count == 0)
-            {
-                //MessageBox.Show("Please select a file to clone and save metadata.");
-                WarningPopup.Show(this, $"Please select a file to clone and save metadata.", Color.Goldenrod);
-                return;
-            }
 
-            string filePath = folderListView.SelectedItems[0].Tag.ToString();
+            if (!TryGetSelectedFilePath(out string filePath))
+                return;
 
             try
             {
@@ -358,12 +298,11 @@ namespace MP3PacEditor
                 var clone = original.Clone(intendedBaseName);
 
                 var fileTag = TagLib.File.Create(clone.FilePath);
-                fileTag.Tag.Title = titleBox.Text;
-                fileTag.Tag.Performers = new string[] { artistBox.Text };
-                fileTag.Tag.Album = albumBox.Text;
+
+                UpdateTagFromInputs(fileTag, titleBox.Text, artistBox.Text, albumBox.Text);
+
                 fileTag.Save();
 
-                //MessageBox.Show("Metadata saved to cloned file!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 WarningPopup.Show(this, $"Successfully saved metadata to cloned file!\n({Path.GetFileName(filePath)})", Color.LimeGreen);
 
                 LoadFilesFromFolder(Path.GetDirectoryName(filePath));
@@ -376,13 +315,10 @@ namespace MP3PacEditor
 
         private void deleteButton_Click(object sender, EventArgs e)
         {
-            if (folderListView.SelectedItems.Count == 0)
-            {
-                WarningPopup.Show(this, "Please select a file to delete.", Color.Goldenrod);
-                return;
-            }
 
-            string filePath = folderListView.SelectedItems[0].Tag.ToString();
+            if (!TryGetSelectedFilePath(out string filePath))
+                return;
+
             string fileName = Path.GetFileName(filePath);
 
             var result = MessageBox.Show($"Are you sure you want to delete:\n{fileName}?",
@@ -405,9 +341,63 @@ namespace MP3PacEditor
             }
         }
 
+        public static class Formatting
+        {
+            public const string DateTimeFormat = "dd/MM/yyyy HH:mm:ss";
+        }
+
+        private bool TryGetSelectedFilePath(out string filePath)
+        {
+            filePath = string.Empty;
+
+            if (folderListView.SelectedItems.Count == 0)
+            {
+                WarningPopup.Show(this, "Please select a file from the list.", Color.Goldenrod);
+                return false;
+            }
+
+            var selected = folderListView.SelectedItems[0];
+
+            if (selected.Tag is string path && !string.IsNullOrWhiteSpace(path))
+            {
+                filePath = path;
+                return true;
+            }
+
+            WarningPopup.Show(this, "Selected item does not contain a valid file path.", Color.DarkRed);
+            return false;
+        }
+
+        private static void UpdateTagFromInputs(TagLib.File fileTag, string title, string artist, string album)
+        {
+            fileTag.Tag.Title = title;
+            fileTag.Tag.Performers = new[] { artist };
+            fileTag.Tag.Album = album;
+        }
+
+        private static void RenameFileIfNeeded(ref string filePath, string newFilePath)
+        {
+            if (!string.Equals(filePath, newFilePath, StringComparison.OrdinalIgnoreCase))
+            {
+                File.Move(filePath, newFilePath);
+                filePath = newFilePath;
+            }
+        }
+
         private void clearButton_Click(object sender, EventArgs e)
         {
+            // išvalom tekstinius laukus
+            titleBox.Clear();
+            artistBox.Clear();
+            albumBox.Clear();
+            fileNameBox.Clear();
 
+            // nuimam pažymėjimą iš listview
+            folderListView.SelectedItems.Clear();
+            infoListView.Items.Clear();
+
+            // nuimam album art
+            albumArtBox.Image = null;
         }
     }
 }

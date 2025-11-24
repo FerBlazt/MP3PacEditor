@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Windows.Forms;
+using MP3PacEditor;
+using static MP3PacEditor.MainWindowForm;
 
 public sealed class ListViewItemComparer : Comparer<ListViewItem>
 {
@@ -76,14 +78,14 @@ public sealed class ListViewItemComparer : Comparer<ListViewItem>
     {
         bool parsedX = DateTime.TryParseExact(
             textX,
-            DateTimeFormat,
+            Formatting.DateTimeFormat,
             CultureInfo.InvariantCulture,
             DateTimeStyles.None,
             out DateTime dateX);
 
         bool parsedY = DateTime.TryParseExact(
             textY,
-            DateTimeFormat,
+            Formatting.DateTimeFormat,
             CultureInfo.InvariantCulture,
             DateTimeStyles.None,
             out DateTime dateY);

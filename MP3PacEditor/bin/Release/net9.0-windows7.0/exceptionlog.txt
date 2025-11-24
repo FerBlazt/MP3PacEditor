@@ -32,3 +32,156 @@ Stack Trace:
    at TagLib.File.Create(String path)
    at MP3PacEditor.MainWindowForm.LoadFilesFromFolder(String selectedFolderPath) in C:\Users\Rokas\Documents\MP3PacEditor\MP3PacEditor\Form1.cs:line 103
 ----------------------------------------------------------------------------------------------------
+=== Metadata Read Exception ===
+Timestamp: 2025-11-24 19:14:53
+File: C:\Users\Rokas\Desktop\mp3 editor test\corrupted NCS song.flac
+Message: Error reading metadata.
+Inner Exception: CorruptFileException - FLAC stream not found at starting position.
+Stack Trace:
+   at TagLib.Flac.File.ReadBlocks(Int64& start, Int64& end, BlockMode mode, BlockType[] types)
+   at TagLib.Flac.File.ReadStart(Int64 start, ReadStyle propertiesStyle)
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at TagLib.NonContainer.File..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)
+   at TagLib.Flac.File..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path)
+   at MP3PacEditor.MainWindowForm.LoadFilesFromFolder(String selectedFolderPath) in C:\Users\Rokas\Documents\MP3PacEditor\MP3PacEditor\Form1.cs:line 103
+----------------------------------------------------------------------------------------------------
+=== Metadata Read Exception ===
+Timestamp: 2025-11-24 19:24:48
+File: C:\Users\Rokas\Desktop\mp3 editor test\corrupted NCS song.flac
+Message: Error reading metadata.
+Inner Exception: CorruptFileException - FLAC stream not found at starting position.
+Stack Trace:
+   at TagLib.Flac.File.ReadBlocks(Int64& start, Int64& end, BlockMode mode, BlockType[] types)
+   at TagLib.Flac.File.ReadStart(Int64 start, ReadStyle propertiesStyle)
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at TagLib.NonContainer.File..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)
+   at TagLib.Flac.File..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path)
+   at MP3PacEditor.MainWindowForm.LoadFilesFromFolder(String selectedFolderPath) in C:\Users\Rokas\Documents\MP3PacEditor\MP3PacEditor\Form1.cs:line 103
+----------------------------------------------------------------------------------------------------
+=== Metadata Read Exception ===
+Timestamp: 2025-11-24 19:25:39
+File: C:\Users\Rokas\Desktop\mp3 editor test\corrupted NCS song.flac
+Message: Error reading metadata.
+Inner Exception: CorruptFileException - FLAC stream not found at starting position.
+Stack Trace:
+   at TagLib.Flac.File.ReadBlocks(Int64& start, Int64& end, BlockMode mode, BlockType[] types)
+   at TagLib.Flac.File.ReadStart(Int64 start, ReadStyle propertiesStyle)
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at TagLib.NonContainer.File..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)
+   at TagLib.Flac.File..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path)
+   at MP3PacEditor.MainWindowForm.LoadFilesFromFolder(String selectedFolderPath) in C:\Users\Rokas\Documents\MP3PacEditor\MP3PacEditor\Form1.cs:line 103
+----------------------------------------------------------------------------------------------------
+=== Metadata Read Exception ===
+Timestamp: 2025-11-24 19:25:44
+File: C:\Users\Rokas\Desktop\mp3 editor test\corrupted NCS song.flac
+Message: Error reading metadata.
+Inner Exception: CorruptFileException - FLAC stream not found at starting position.
+Stack Trace:
+   at TagLib.Flac.File.ReadBlocks(Int64& start, Int64& end, BlockMode mode, BlockType[] types)
+   at TagLib.Flac.File.ReadStart(Int64 start, ReadStyle propertiesStyle)
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at TagLib.NonContainer.File..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)
+   at TagLib.Flac.File..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path)
+   at MP3PacEditor.MainWindowForm.LoadFilesFromFolder(String selectedFolderPath) in C:\Users\Rokas\Documents\MP3PacEditor\MP3PacEditor\Form1.cs:line 103
+----------------------------------------------------------------------------------------------------
+=== Metadata Read Exception ===
+Timestamp: 2025-11-24 19:27:22
+File: C:\Users\Rokas\Desktop\mp3 editor test\corrupted NCS song.flac
+Message: Error reading metadata.
+Inner Exception: CorruptFileException - FLAC stream not found at starting position.
+Stack Trace:
+   at TagLib.Flac.File.ReadBlocks(Int64& start, Int64& end, BlockMode mode, BlockType[] types)
+   at TagLib.Flac.File.ReadStart(Int64 start, ReadStyle propertiesStyle)
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at TagLib.NonContainer.File..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)
+   at TagLib.Flac.File..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path)
+   at MP3PacEditor.MainWindowForm.LoadFilesFromFolder(String selectedFolderPath) in C:\Users\Rokas\Documents\MP3PacEditor\MP3PacEditor\Form1.cs:line 103
+----------------------------------------------------------------------------------------------------
+=== Metadata Read Exception ===
+Timestamp: 2025-11-24 19:42:13
+File: C:\Users\Rokas\Desktop\mp3 editor test\corrupted NCS song.flac
+Message: Error reading metadata.
+Inner Exception: CorruptFileException - FLAC stream not found at starting position.
+Stack Trace:
+   at TagLib.Flac.File.ReadBlocks(Int64& start, Int64& end, BlockMode mode, BlockType[] types)
+   at TagLib.Flac.File.ReadStart(Int64 start, ReadStyle propertiesStyle)
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at TagLib.NonContainer.File..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)
+   at TagLib.Flac.File..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path)
+   at MP3PacEditor.MainWindowForm.LoadFilesFromFolder(String selectedFolderPath) in C:\Users\Rokas\Documents\MP3PacEditor\MP3PacEditor\Form1.cs:line 103
+----------------------------------------------------------------------------------------------------
+=== Metadata Read Exception ===
+Timestamp: 2025-11-24 19:42:17
+File: C:\Users\Rokas\Desktop\mp3 editor test\corrupted NCS song.flac
+Message: Error reading metadata.
+Inner Exception: CorruptFileException - FLAC stream not found at starting position.
+Stack Trace:
+   at TagLib.Flac.File.ReadBlocks(Int64& start, Int64& end, BlockMode mode, BlockType[] types)
+   at TagLib.Flac.File.ReadStart(Int64 start, ReadStyle propertiesStyle)
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at TagLib.NonContainer.File..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)
+   at TagLib.Flac.File..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path)
+   at MP3PacEditor.MainWindowForm.LoadFilesFromFolder(String selectedFolderPath) in C:\Users\Rokas\Documents\MP3PacEditor\MP3PacEditor\Form1.cs:line 103
+----------------------------------------------------------------------------------------------------
+=== Metadata Read Exception ===
+Timestamp: 2025-11-24 19:42:23
+File: C:\Users\Rokas\Desktop\mp3 editor test\corrupted NCS song.flac
+Message: Error reading metadata.
+Inner Exception: CorruptFileException - FLAC stream not found at starting position.
+Stack Trace:
+   at TagLib.Flac.File.ReadBlocks(Int64& start, Int64& end, BlockMode mode, BlockType[] types)
+   at TagLib.Flac.File.ReadStart(Int64 start, ReadStyle propertiesStyle)
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at TagLib.NonContainer.File..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)
+   at TagLib.Flac.File..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path)
+   at MP3PacEditor.MainWindowForm.LoadFilesFromFolder(String selectedFolderPath) in C:\Users\Rokas\Documents\MP3PacEditor\MP3PacEditor\Form1.cs:line 103
+----------------------------------------------------------------------------------------------------
+=== Metadata Read Exception ===
+Timestamp: 2025-11-24 19:50:59
+File: C:\Users\Rokas\Desktop\mp3 editor test\corrupted NCS song.flac
+Message: Error reading metadata.
+Inner Exception: CorruptFileException - FLAC stream not found at starting position.
+Stack Trace:
+   at TagLib.Flac.File.ReadBlocks(Int64& start, Int64& end, BlockMode mode, BlockType[] types)
+   at TagLib.Flac.File.ReadStart(Int64 start, ReadStyle propertiesStyle)
+   at TagLib.NonContainer.File.Read(ReadStyle propertiesStyle)
+   at TagLib.NonContainer.File..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)
+   at TagLib.Flac.File..ctor(IFileAbstraction abstraction, ReadStyle propertiesStyle)
+   at InvokeStub_File..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)   at TagLib.File.Create(IFileAbstraction abstraction, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path, String mimetype, ReadStyle propertiesStyle)
+   at TagLib.File.Create(String path)
+   at MP3PacEditor.MainWindowForm.LoadFilesFromFolder(String selectedFolderPath) in C:\Users\Rokas\Documents\MP3PacEditor\MP3PacEditor\Form1.cs:line 73
+----------------------------------------------------------------------------------------------------
